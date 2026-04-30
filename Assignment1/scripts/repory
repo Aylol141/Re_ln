@@ -1,0 +1,7 @@
+#!/bin/bash
+mkdir -p ./notes
+filename="./notes/$(date +%Y-%m-%d).txt"
+echo "User: $(whoami)" > $filename
+echo "Path: $(pwd)" >> $filename
+echo "Files in data: $(ls ../data | wc -l)" >> $filename
+echo "done"
